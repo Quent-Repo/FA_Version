@@ -1,4 +1,4 @@
-
+// document.getElementsByTagName("body")[0].dataset.staticPath // this can be used to tell which verson of the site you are using since both have different "ClassName" or buttons
 document.onkeydown = checkKey;
 function checkKey(See)
 	{
