@@ -41,3 +41,24 @@ function checkKey(See)
 
 document.getElementsByClassName("next button-link")[0].click()
 document.getElementsByClassName("prev button-link")[0].click()
+
+
+//This is for downloading
+/*
+
+const link = document.createElement("a");
+r=document.getElementById("submissionImg")
+link.href = r.attributes[5].nodeValue;
+link.download = link.href;
+link.click();
+
+
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded");
+  
+});
+link.href =document.getElementsByTagName("img")[0].baseURI
+link.download = link.href;
+link.click();
+
+*/
