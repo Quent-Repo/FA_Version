@@ -61,14 +61,12 @@ function checkKey(See)
         }
         else{
         	if(window.location.host == 'd.furaffinity.net'){
-            console.log("something")
             const link = document.createElement("a");
             r=document.getElementById("submissionImg")
             link.href =document.getElementsByTagName("img")[0].baseURI;
             link.download = link.href;
             link.click();
-            //close();
-            console.log("xd")
+            close();
         }
             null; }
             
