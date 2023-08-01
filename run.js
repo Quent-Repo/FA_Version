@@ -16,7 +16,7 @@ function checkKey(See)
         }
         else if(See.code == 'ArrowRight')
         {
-            if(((document.getElementsByClassName("button standard mobile-fix")[2].text) == "Next") || ((document.getElementsByClassName("button standard mobile-fix")[3].text) == "Next"))
+            if(((document.getElementsByClassName("button standard mobile-fix")[4].text) == "Next") || ((document.getElementsByClassName("button standard mobile-fix")[5].text) == "Next"))
             {
                     document.getElementsByClassName("button standard mobile-fix")[(document.getElementsByClassName("button standard mobile-fix").length)-1].click() //Older
             }
@@ -35,6 +35,17 @@ function checkKey(See)
                 
                 
             }
+        }
+        else if(See.code == "KeyF"){
+            //needs to be edited
+            if(((document.getElementsByClassName("button standard mobile-fix")[0].text) == "+Fav") || ((document.getElementsByClassName("button standard mobile-fix")[0].text) == "-Fav")){
+                document.getElementsByClassName("button standard mobile-fix")[0].click()
+            }
+            else if(((document.getElementsByClassName("button standard mobile-fix")[1].text) == "+Fav") || ((document.getElementsByClassName("button standard mobile-fix")[1].text) == "-Fav")){
+                document.getElementsByClassName("button standard mobile-fix")[1].click()
+
+            }      
+
         }
                 else{
                     null; 
@@ -57,6 +68,13 @@ function checkKey(See)
         	link.href = document.getElementById("submissionImg").dataset.fullviewSrc;
         	link.download = link.href;
         	window.open(link.download, '_blank');
+
+        }
+        else if(See.code == "KeyF"){
+            if((document.getElementsByClassName("alt1 actions aligncenter")[0].childNodes[1].textContent == "+Add to Favorites") || (document.getElementsByClassName("alt1 actions aligncenter")[0].childNodes[1].textContent == "-Remove from Favorites")){
+            document.querySelector("#page-submission > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > div.alt1.actions.aligncenter > b:nth-child(1) > a").click()}
+            else if((document.getElementsByClassName("alt1 actions aligncenter")[0].childNodes[3].textContent == "+Add to Favorites") || (document.getElementsByClassName("alt1 actions aligncenter")[0].childNodes[3].textContent == "-Remove from Favorites")){
+            document.querySelector("#page-submission > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > div.alt1.actions.aligncenter > b:nth-child(2) > a").click()}
 
         }
         else{
