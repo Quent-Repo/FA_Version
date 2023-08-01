@@ -1,0 +1,11 @@
+  {
+    "name": "FA",
+    "version": "1.0",
+    "description": "FA",
+    "manifest_version": 3,
+    "content_scripts":[{
+      "matches":["https://d.furaffinity.net/*","https://www.furaffinity.net/*"],
+      "js": ["run.js"],
+      "run_at": "document_end"
+	   }]
+  }
